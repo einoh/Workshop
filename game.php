@@ -6,7 +6,6 @@
 
     $username = $_SESSION['username'];
 
-    $jack_n_poi_result_map = [ -1 => 'You Loose', 0 => 'Tie', 1 => 'You Win'];
     $jack_n_poi_arr = ['Rock','Paper','Scissors'];
     $jack_n_poi_matrix = [
         0 => ["Tie","You Loose", "You Win"],
@@ -28,7 +27,6 @@
                         $result .= "Human=". $jack_n_poi_arr[$j]." Computer=".$jack_n_poi_arr[$i] ." Result=". $jack_n_poi_matrix[$j][$i] . "<br>";
                 }
             }else{
-               // $result = $jack_n_poi_result_map[$jack_n_poi_matrix[$human][$computer]];
                 $result = $jack_n_poi_matrix[$human][$computer];
             }
         }
