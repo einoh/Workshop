@@ -31,53 +31,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Chemical Developments">
+    <meta name="author" content="Nicanor Nuñez IV">
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
-  <body>
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">&nbsp;</div>
-    <div class="col-sm ">
-      
-      <div class="jumbotron" style="margin-top:50px">
-        <h1 class="display-6">Please login</h1>
-        <form method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-
-          <?php if(!empty(($_SESSION['error']))): ?>
-          <div class="alert alert-danger">
-            <?php foreach ($_SESSION['error'] as $error): ?>
-              <span><?php echo $error; ?></span><br>
-            <?php endforeach; ?>
-          </div>
-          <?php endif; ?>
-
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" placeholder="Username" name="username">
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" name="password">
-          </div>
-          <input type="submit" class="btn btn-primary" name="submit" value="Login"/>
-        </form>
+  <body style="background-color: #cecece;">
+    <div class="container">
+      <div style="background-color:White; max-width: 400px; padding: 15px; margin: 0 auto; margin-top:40px; margin-bottom:20px; border-radius: 8px; box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14); box-sizing: border-box;">
+        <center>
+            <h2>Rock Paper Scissor Game</h2>
+        </center>
       </div>
-
-
+      <div style="background-color:White; max-width: 350px; padding: 15px; margin: 0 auto; margin-top:40px; margin-bottom:20px; border-radius: 8px; box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14); box-sizing: border-box;">
+          <center>
+            <h4>Please Log-in</h4>
+          </center>
+          <br>
+          <form method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+            <?php if(!empty(($_SESSION['error']))): ?>
+            <div class="alert alert-danger">
+              <?php foreach ($_SESSION['error'] as $error): ?>
+                <span><?php echo $error; ?></span><br>
+              <?php endforeach; ?>
+            </div>
+            <?php endif; ?>
+            <input type="text" class="form-control" id="username" placeholder="Username" name="username"><br>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password"><br>
+            <input type="submit" class="btn btn-primary" name="submit" value="Login"/>
+          </form>
+      </div>
     </div>
-    <div class="col-sm">&nbsp;</div>
-  </div>
-</div>
-
-
-
   </body>
 </html>
