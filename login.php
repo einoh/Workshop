@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body style="background-color: #cecece;">
+    <!-- Username: username Password: password -->
     <div class="container">
       <div style="background-color:White; max-width: 400px; padding: 15px; margin: 0 auto; margin-top:40px; margin-bottom:20px; border-radius: 8px; box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14); box-sizing: border-box;">
         <center>
@@ -63,6 +64,8 @@
             <input type="password" class="form-control" id="password" placeholder="Password" name="password"><br>
             <input type="submit" class="btn btn-primary" name="submit" value="Login"/>
           </form>
+          <br>
+          <p>Password hint : View source and find a password hint in the HTML Code comments.</p>
       </div>
     </div>
   </body>
