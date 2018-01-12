@@ -43,7 +43,7 @@
         <div class="col-md-6">
           <center>
             <h1>Welcome to </br>Autos Database </br>Web Application</h1>
-          </center
+          </center>
         </div>
         </br></br>
         <div class="col-md-6">
