@@ -37,27 +37,27 @@
     <title>Autos Database</title>
   </head>
   <body>
-<div class="container" style="margin-top:20px;">
-    <div class="row">
-      <div class="col-md-6">
-        <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-          <?php if(!empty(($_SESSION['error']))): ?>
-            <div class="alert alert-danger">
-              <?php foreach ($_SESSION['error'] as $error): ?>
-                <span><?php echo $error; ?></span><br>
-              <?php endforeach; ?>
-            </div>
-          <?php endif; ?>
-          <input type="text" class="form-control" placeholder="Email" autofocus name="username">
-          <input type="password" class="form-control" placeholder="Password" name="password">
-          <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
-        </form>
-      </div>
-      <div class="col-md-6">
-        <span>Welcome to Autos Database Web App</span>
+    </br></br></br></br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <input type="text" class="form-control" placeholder="Email" autofocus name="username"></br>
+            <input type="password" class="form-control" placeholder="Password" name="password">
+            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
+            <?php if(!empty(($_SESSION['error']))): ?>
+              <div class="alert alert-danger">
+                <?php foreach ($_SESSION['error'] as $error): ?>
+                  <span><?php echo $error; ?></span><br>
+                <?php endforeach; ?>
+              </div>
+            <?php endif; ?>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <span>Welcome to Autos Database Web App</span>
+        </div>
       </div>
     </div>
-</div>
-
   </body>
 </html>
