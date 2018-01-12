@@ -47,7 +47,7 @@
         </div>
         </br></br>
         <div class="col-md-6">
-          <div class="jumbotron" style="box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);box-sizing: border-box; max-width: 330px;">
+          <div class="jumbotron" style="box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);box-sizing: border-box; width: 350px;">
             <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
               <input type="text" class="form-control" placeholder="Email Address" autofocus name="username" style="margin-bottom: 10px;">
               <input type="password" class="form-control" placeholder="Password" name="password" style="margin-bottom: 10px;">
