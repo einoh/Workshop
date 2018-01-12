@@ -35,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Bagasbas, Angelo Dan F. - Automobiles and Databases | Login</title>
+    <title>Autos Database</title>
   </head>
   <body>
 <div class="container">
@@ -44,7 +44,6 @@
             <div class="account-wall">
                 <div id="my-tab-content" class="tab-content">
                     <div class="tab-pane active" id="login">
-                        <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
                         <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
 <?php if(!empty(($_SESSION['error']))): ?>
