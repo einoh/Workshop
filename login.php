@@ -40,28 +40,23 @@
   <body>
 <div class="container">
     <div class="row">
-        <div class="offset-md-4 col-sm-4">
-            <div class="account-wall">
-                <div id="my-tab-content" class="tab-content">
-                    <div class="tab-pane active" id="login">
-                        <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-
-<?php if(!empty(($_SESSION['error']))): ?>
-  <div class="alert alert-danger">
-    <?php foreach ($_SESSION['error'] as $error): ?>
-      <span><?php echo $error; ?></span><br>
-    <?php endforeach; ?>
-  </div>
-<?php endif; ?>
-
-                            <input type="text" class="form-control" placeholder="Email" autofocus name="username">
-                            <input type="password" class="form-control" placeholder="Password" name="password">
-                            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
-                        </form>
-                    </div>
-                </div>
+      <div class="col-md-6">
+        <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+          <?php if(!empty(($_SESSION['error']))): ?>
+            <div class="alert alert-danger">
+              <?php foreach ($_SESSION['error'] as $error): ?>
+                <span><?php echo $error; ?></span><br>
+              <?php endforeach; ?>
             </div>
-        </div>
+          <?php endif; ?>
+          <input type="text" class="form-control" placeholder="Email" autofocus name="username">
+          <input type="password" class="form-control" placeholder="Password" name="password">
+          <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
+        </form>
+      </div>
+      <div class="col-md-6">
+        <span>Welcome to Autos Database Web App</span>
+      </div>
     </div>
 </div>
 
