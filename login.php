@@ -33,7 +33,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <title>Autos Database</title>
   </head>
   <body>
@@ -41,18 +41,20 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-            <input type="text" class="form-control" placeholder="Email" autofocus name="username"></br>
-            <input type="password" class="form-control" placeholder="Password" name="password">
-            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
-            <?php if(!empty(($_SESSION['error']))): ?>
-              <div class="alert alert-danger">
-                <?php foreach ($_SESSION['error'] as $error): ?>
-                  <span><?php echo $error; ?></span><br>
-                <?php endforeach; ?>
-              </div>
-            <?php endif; ?>
-          </form>
+          <div style="width:250px;">
+            <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+              <input type="text" class="form-control" placeholder="Email" autofocus name="username" style="margin-bottom: 2cm;">
+              <input type="password" class="form-control" placeholder="Password" name="password">
+              <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
+              <?php if(!empty(($_SESSION['error']))): ?>
+                <div class="alert alert-danger">
+                  <?php foreach ($_SESSION['error'] as $error): ?>
+                    <span><?php echo $error; ?></span><br>
+                  <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
+            </form>
+          </div>
         </div>
         <div class="col-md-6">
           <span>Welcome to Autos Database Web App</span>
