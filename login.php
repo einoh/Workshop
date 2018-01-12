@@ -41,11 +41,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div style="width:250px;">
+          <h1>Welcome to Autos Database Web App</h1>
+        </div>
+        </br></br>
+        <div class="col-md-6">
+          <div class="jumbotron" style="box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);box-sizing: border-box;">
             <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-              <input type="text" class="form-control" placeholder="Email" autofocus name="username" style="margin-bottom: 2cm;">
+              <input type="text" class="form-control" placeholder="Email" autofocus name="username" style="margin-bottom: 10px;">
               <input type="password" class="form-control" placeholder="Password" name="password">
               <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In" />
+              </br>
               <?php if(!empty(($_SESSION['error']))): ?>
                 <div class="alert alert-danger">
                   <?php foreach ($_SESSION['error'] as $error): ?>
@@ -55,9 +60,6 @@
               <?php endif; ?>
             </form>
           </div>
-        </div>
-        <div class="col-md-6">
-          <span>Welcome to Autos Database Web App</span>
         </div>
       </div>
     </div>
